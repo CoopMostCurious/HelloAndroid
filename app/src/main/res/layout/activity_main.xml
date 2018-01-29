@@ -1,18 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.cooper.helloandroid.MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.cooper.helloandroid.MainActivity"
+    android:background="#EFF0F1">
 
-    <TextView
+    <ImageView
+        android:id="@+id/photo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/companyName"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/pexels_photo_789433" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Udacity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#767777"/>
+
+    <TextView
+        android:id="@+id/companyStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/companyCityStateZip"
+        android:layout_alignEnd="@+id/companyCityStateZip"
+        android:layout_alignRight="@+id/companyCityStateZip"
+        android:layout_marginBottom="25dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="2465 Latham St"
+        android:textSize="16sp"
+        android:textColor="#767777"/>
+
+    <TextView
+        android:id="@+id/companyCityStateZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/companyPhone"
+        android:layout_alignEnd="@+id/photo"
+        android:layout_alignRight="@+id/photo"
+        android:layout_marginBottom="26dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Mountain View, CA 94043"
+        android:textSize="16sp"
+        android:textColor="#767777"/>
+
+    <TextView
+        android:id="@+id/companyPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linkToSite"
+        android:layout_alignLeft="@+id/companyStreet"
+        android:layout_alignStart="@+id/companyStreet"
+        android:layout_marginBottom="19dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="650-555-5555"
+        android:textSize="16sp"
+        android:textColor="#767777"/>
+
+    <TextView
+        android:id="@+id/linkToSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="www.udacity.edu"
+        android:textSize="16sp"
+        android:textColor="#767777"/>
+
+</RelativeLayout>
