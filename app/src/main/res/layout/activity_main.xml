@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:context="com.example.cooper.helloandroid.MainActivity"
-    android:background="#EFF0F1">
+    android:background="#EFF0F1nic">
 
     <ImageView
         android:id="@+id/photo"
