@@ -15,6 +15,7 @@
         android:layout_gravity="center_horizontal"
         android:text="Udacity"
         android:textColor="#767777"
+        android:background="#F1F1F2"
         android:textSize="48sp" />
 
     <ImageView
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:scaleType="centerInside"
+        android:background="#F1F1F2"
         android:src="@drawable/pexels_photo_789433" />
 
     <TextView
@@ -32,6 +34,7 @@
         android:layout_gravity="end"
         android:text="2465 Latham St"
         android:textColor="#767777"
+        android:background="#F1F1F2"
         android:textSize="24sp" />
 
     <TextView
@@ -42,6 +45,7 @@
         android:layout_gravity="end"
         android:text="Mountain View, CA 94043"
         android:textColor="#767777"
+        android:background="#F1F1F2"
         android:textSize="24sp" />
 
     <TextView
@@ -52,6 +56,7 @@
         android:layout_gravity="end"
         android:text="650-555-5555"
         android:textColor="#767777"
+        android:background="#F1F1F2"
         android:textSize="24sp" />
 
     <TextView
@@ -62,6 +67,7 @@
         android:layout_gravity="end"
         android:text="www.udacity.edu"
         android:textColor="#767777"
+        android:background="#F1F1F2"
         android:textSize="24sp" />
 
 </LinearLayout>
