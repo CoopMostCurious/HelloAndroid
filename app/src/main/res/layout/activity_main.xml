@@ -1,73 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@drawable/animation_list"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#F3F3F3"
     android:orientation="vertical"
     tools:context="com.example.cooper.helloandroid.MainActivity">
 
     <TextView
         android:id="@+id/companyName"
         android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:layout_gravity="center_horizontal"
+        android:layout_height="24dp"
+        android:layout_centerInParent="true"
         android:text="Udacity"
-        android:textColor="#767777"
-        android:background="#F1F1F2"
-        android:textSize="48sp" />
-
-    <ImageView
-        android:id="@+id/photo"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:scaleType="centerInside"
-        android:background="#F1F1F2"
-        android:src="@drawable/pexels_photo_789433" />
+        android:textColor="#767777"/>
 
     <TextView
         android:id="@+id/companyStreet"
         android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:layout_gravity="end"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/companyName"
         android:text="2465 Latham St"
-        android:textColor="#767777"
-        android:background="#F1F1F2"
-        android:textSize="24sp" />
+        android:textColor="#767777" />
 
     <TextView
         android:id="@+id/companyCityStateZip"
         android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:layout_gravity="end"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/companyStreet"
+        android:layout_height="24dp"
         android:text="Mountain View, CA 94043"
-        android:textColor="#767777"
-        android:background="#F1F1F2"
-        android:textSize="24sp" />
+        android:textColor="#767777" />
 
     <TextView
         android:id="@+id/companyPhone"
         android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:layout_gravity="end"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/companyCityStateZip"
         android:text="650-555-5555"
-        android:textColor="#767777"
-        android:background="#F1F1F2"
-        android:textSize="24sp" />
+        android:textColor="#767777" />
 
     <TextView
         android:id="@+id/linkToSite"
         android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        android:layout_gravity="end"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/companyPhone"
         android:text="www.udacity.edu"
-        android:textColor="#767777"
-        android:background="#F1F1F2"
-        android:textSize="24sp" />
+        android:textColor="#767777" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/socialMediaLinks"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linkToSite"
+        android:text="Social Media Links Here" />
+
+
+
+</RelativeLayout>
