@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:background="@drawable/animation_list"
@@ -14,7 +15,16 @@
         android:layout_height="24dp"
         android:layout_centerInParent="true"
         android:text="Udacity"
-        android:textColor="#767777"/>
+        android:textColor="#A6ACAD"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/companyPhone"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/udacity_for_app" />
 
     <TextView
         android:id="@+id/companyStreet"
@@ -23,7 +33,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/companyName"
         android:text="2465 Latham St"
-        android:textColor="#767777" />
+        android:textColor="#A6ACAD" />
 
     <TextView
         android:id="@+id/companyCityStateZip"
@@ -32,7 +42,7 @@
         android:layout_below="@id/companyStreet"
         android:layout_height="24dp"
         android:text="Mountain View, CA 94043"
-        android:textColor="#767777" />
+        android:textColor="#A6ACAD" />
 
     <TextView
         android:id="@+id/companyPhone"
@@ -41,7 +51,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/companyCityStateZip"
         android:text="650-555-5555"
-        android:textColor="#767777" />
+        android:textColor="#A6ACAD" />
 
     <TextView
         android:id="@+id/linkToSite"
@@ -50,7 +60,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/companyPhone"
         android:text="www.udacity.edu"
-        android:textColor="#767777" />
+        android:textColor="#A6ACAD" />
 
     <TextView
         android:id="@+id/socialMediaLinks"
@@ -59,7 +69,6 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/linkToSite"
         android:text="Social Media Links Here" />
-
 
 
 </RelativeLayout>
