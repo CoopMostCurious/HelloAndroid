@@ -21,93 +21,73 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="72dp"
-        android:layout_marginRight="72dp"
-        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
         app:srcCompat="@drawable/udacity_for_app" />
 
     <TextView
         android:id="@+id/companyName"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_alignEnd="@+id/companyStreet"
-        android:layout_alignRight="@+id/companyStreet"
-        android:layout_below="@+id/logo"
-        android:layout_marginTop="35dp"
-        android:paddingEnd="30dp"
-        android:paddingLeft="30dp"
-        android:paddingStart="30dp"
-        android:text="Udacity"
-        android:textColor="#A6ACAD" />
+        android:layout_height="wrap_content"
+        android:layout_above="@id/companyStreet"
+        android:layout_centerHorizontal="true"
+        android:text="@string/company"
+        android:textColor="@color/main_text"
+        android:textSize="32sp"
+        android:textAllCaps="true"
+        android:textAppearance="@android:style/TextAppearance.Large"/>
 
     <TextView
         android:id="@+id/companyStreet"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_alignEnd="@+id/companyCityStateZip"
-        android:layout_alignRight="@+id/companyCityStateZip"
-        android:layout_below="@+id/companyName"
-        android:paddingEnd="30dp"
-        android:paddingLeft="30dp"
-        android:paddingStart="30dp"
-        android:text="2465 Latham St"
-        android:textColor="#A6ACAD" />
+        android:layout_height="wrap_content"
+        android:layout_above="@id/companyCityStateZip"
+        android:layout_marginTop="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginStart="16sp"
+        android:text="@string/companyStreet"
+        android:textColor="@color/main_text"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/companyCityStateZip"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_alignEnd="@+id/companyPhone"
-        android:layout_alignRight="@+id/companyPhone"
-        android:layout_below="@+id/companyStreet"
-        android:paddingEnd="30dp"
-        android:paddingLeft="30dp"
-        android:paddingStart="30dp"
-        android:text="Mountain View, CA 94043"
-        android:textColor="#A6ACAD" />
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/companyPhone"
+        android:layout_marginLeft="16sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="16sp"
+        android:text="@string/companyCityStateZip"
+        android:textColor="@color/main_text"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/companyPhone"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_alignLeft="@+id/logo"
-        android:layout_alignStart="@+id/logo"
-        android:layout_below="@+id/companyCityStateZip"
-        android:paddingEnd="30dp"
-        android:paddingLeft="30dp"
-        android:paddingStart="30dp"
-        android:text="650-555-5555"
-        android:textColor="#A6ACAD" />
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linkToSite"
+        android:layout_marginLeft="16sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="16sp"
+        android:text="@string/companyPhone"
+        android:textColor="@color/main_text"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/linkToSite"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_alignEnd="@+id/companyPhone"
-        android:layout_alignRight="@+id/companyPhone"
-        android:layout_below="@+id/companyPhone"
-        android:paddingEnd="30dp"
-        android:paddingLeft="30dp"
-        android:paddingStart="30dp"
-        android:text="www.udacity.edu"
-        android:textColor="#A6ACAD" />
-
-    <TextView
-        android:id="@+id/socialMediaLinks"
-        android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_alignEnd="@+id/linkToSite"
-        android:layout_alignRight="@+id/linkToSite"
-        android:layout_below="@+id/linkToSite"
-        android:paddingEnd="30dp"
-        android:paddingLeft="30dp"
-        android:paddingStart="30dp"
-        android:text="Social Media Links Here" />
-
+        android:layout_height="wrap_content"
+        android:layout_above="@id/photo"
+        android:layout_toLeftOf="@id/photo"
+        android:layout_toStartOf="@id/photo"
+        android:layout_marginTop="16sp"
+        android:text="@string/linkToSite"
+        android:autoLink="web"
+        android:textColorLink="@color/main_text"
+        android:textColor="@color/main_text"
+        android:textSize="20sp" />
 
 </RelativeLayout>
