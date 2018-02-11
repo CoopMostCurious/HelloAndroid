@@ -6,6 +6,7 @@
     android:background="@drawable/animation_list"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:padding="16sp"
     android:orientation="vertical"
     tools:context="com.example.cooper.helloandroid.MainActivity">
 
